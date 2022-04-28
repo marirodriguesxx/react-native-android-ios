@@ -2,6 +2,7 @@
 
  export default StyleSheet.create({
      grande: {
-         fontSize: 24
+         fontSize: 24,
+         textAlign: "center"
      }
  })

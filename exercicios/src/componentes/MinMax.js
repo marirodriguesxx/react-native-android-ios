@@ -2,4 +2,11 @@ import React from 'react'
 import { Text } from 'react-native'
 import Estilo from './estilo'
 
-export default () => <Text style = {Estilo.grande}>O valor X é maior que o valor Y</Text>
+export default (props) => {
+    //o valor de props eh um obj  
+    console.warn(props)
+    return (
+    <Text style = {Estilo.grande}>
+        O valor {props.max} é maior que o valor {props.max} 
+    </Text>
+)}
