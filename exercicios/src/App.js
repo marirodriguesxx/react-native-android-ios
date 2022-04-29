@@ -24,7 +24,8 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-import Titulo from './componentes/titulo'
+import Botao from './componentes/botao'
+// import Titulo from './componentes/titulo'
 // import MinMax  from './componentes/MinMax'
 // import Aleat  from './componentes/aleatorio'
 // import CompPadrao, {Comp1, Comp2} from './componentes/Multi'
@@ -32,8 +33,9 @@ import Titulo from './componentes/titulo'
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <Titulo principal="Cadastro Produto"
-                secundario="Tela de Cadastro do Produto" />
+        <Botao />
+        {/* <Titulo principal="Cadastro Produto"
+                secundario="Tela de Cadastro do Produto" /> */}
         {/* {<MinMax min={3} max={20}/>
         <Aleat min={1} max={94} /> 
         <CompPadrao />
