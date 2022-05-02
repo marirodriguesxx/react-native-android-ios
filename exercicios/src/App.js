@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, SafeAreaView } from 'react-native'
+import { StyleSheet, SafeAreaView } from 'react-native'
 
 // function App(){
 //     const jsx = <Text>Primeiro Componente</Text>
@@ -24,7 +24,11 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-import Diferenciar from './componentes/diferenciar'
+import UsuarioLogado from './componentes/usuarioLogado'
+// import Familia from './componentes/relacao/familia'
+// import Membro from './componentes/relacao/membro'
+// import ParImpar from './componentes/ParImpar'
+// import Diferenciar from './componentes/diferenciar'
 // import Contador from './componentes/contador'
 // import Pai from './componentes/indireta/Pai'
 // import ContadorV2 from './componentes/contador/contadorV2'
@@ -39,7 +43,18 @@ import Diferenciar from './componentes/diferenciar'
 export default () => (
     
     <SafeAreaView style={style.App}> 
-        <Diferenciar />
+        < UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
+        < UsuarioLogado usuario={ {nome: 'Gui'} }/>
+        {/* < Familia>
+            <Membro nome = "Bia" sobrenome="Arruda" />
+            <Membro nome = "Carlos" sobrenome="Arruda" />
+        </Familia>  
+        < Familia>
+            <Membro nome = "Ana" sobrenome="Silva" />
+            <Membro nome = "Julia" sobrenome="Silva" />
+        </Familia>         */}
+        {/* <ParImpar num={3}/> */}
+        {/* <Diferenciar /> */}
         {/* <ContadorV2 /> */}
         {/* <Pai /> */}
         {/* <Pai /> */}
