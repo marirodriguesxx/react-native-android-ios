@@ -25,7 +25,8 @@ export default =>  return <Text>Primeiro Componente</Text>
 */
 
 
-import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
+import DigiteSeuNome from './componentes/DigiteSeuNome'
+// import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
 // import ListaProdutos from './componentes/produtos/listaProdutos'
 // import UsuarioLogado from './componentes/usuarioLogado'
 // import Familia from './componentes/relacao/familia'
@@ -46,7 +47,8 @@ import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
 export default () => (
     
     <SafeAreaView style={style.App}> 
-        <ListaProdutosV2 />
+        <DigiteSeuNome />
+        {/* <ListaProdutosV2 /> */}
         {/* < UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
         < UsuarioLogado usuario={ {nome: 'Gui'} }/> */}
         {/* < Familia>

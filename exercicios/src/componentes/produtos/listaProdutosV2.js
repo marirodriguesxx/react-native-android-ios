@@ -20,7 +20,7 @@ export default props => {
                 data={produtos}
                 keyExtractor={i => `${i.id}`} //recebe o item e retorna sua chave
                 renderItem={produtoRender} //recebemos a referencia da funcao
-                //o flatlist chamara a funcao para cada um dos elementos
+                //o flatlist chamara a funcao para cada um dos elementos 
             />
         </>
     )
