@@ -24,9 +24,10 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
+import Diferenciar from './componentes/diferenciar'
 // import Contador from './componentes/contador'
 // import Pai from './componentes/indireta/Pai'
-import ContadorV2 from './componentes/contador/contadorV2'
+// import ContadorV2 from './componentes/contador/contadorV2'
 // import Pai from './componentes/direta/Pai'
 // import Botao from './componentes/botao'
 // import Titulo from './componentes/titulo'
@@ -38,7 +39,8 @@ import ContadorV2 from './componentes/contador/contadorV2'
 export default () => (
     
     <SafeAreaView style={style.App}> 
-        <ContadorV2 />
+        <Diferenciar />
+        {/* <ContadorV2 /> */}
         {/* <Pai /> */}
         {/* <Pai /> */}
         {/* <Contador inicial={100} passo={10} />

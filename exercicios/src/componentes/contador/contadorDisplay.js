@@ -2,11 +2,10 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import Estilo from '../estilo'
 
-
 export default props => {
-    return(
+    return (
         <View style={style.Display}>
-            <Text style={[Estilo.grande, style.DisplayText]}>
+            <Text style={[Estilo.txtG, style.DisplayText]}>
                 {props.num}
             </Text>
         </View>

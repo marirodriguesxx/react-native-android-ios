@@ -1,11 +1,12 @@
 import React from 'react'
-import { Button } from 'react-native'
+import { View, Button, StyleSheet } from 'react-native'
+
 
 export default props => {
-    return(
+    return (
         <View style={style.Botoes}>
-            <Button title="+" onPress={props.inc}/>
-            <Button title="-" onPress={props.dec}/>
+            <Button title="+" onPress={props.inc} />
+            <Button title="-" onPress={props.dec} />
         </View>
     )
 }
