@@ -24,7 +24,10 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-import Contador from './componentes/contador'
+// import Contador from './componentes/contador'
+// import Pai from './componentes/indireta/Pai'
+import ContadorV2 from './componentes/contador/contadorV2'
+// import Pai from './componentes/direta/Pai'
 // import Botao from './componentes/botao'
 // import Titulo from './componentes/titulo'
 // import MinMax  from './componentes/MinMax'
@@ -33,9 +36,13 @@ import Contador from './componentes/contador'
 // import Primeiro from './componentes/Primeiro'  
 
 export default () => (
+    
     <SafeAreaView style={style.App}> 
-        <Contador inicial={100} passo={10} />
-        <Contador />
+        <ContadorV2 />
+        {/* <Pai /> */}
+        {/* <Pai /> */}
+        {/* <Contador inicial={100} passo={10} />
+        <Contador /> */}
         {/* <Botao /> */}
         {/* <Titulo principal="Cadastro Produto"
                 secundario="Tela de Cadastro do Produto" /> */}
