@@ -24,7 +24,10 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-import UsuarioLogado from './componentes/usuarioLogado'
+
+import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
+// import ListaProdutos from './componentes/produtos/listaProdutos'
+// import UsuarioLogado from './componentes/usuarioLogado'
 // import Familia from './componentes/relacao/familia'
 // import Membro from './componentes/relacao/membro'
 // import ParImpar from './componentes/ParImpar'
@@ -43,8 +46,9 @@ import UsuarioLogado from './componentes/usuarioLogado'
 export default () => (
     
     <SafeAreaView style={style.App}> 
-        < UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
-        < UsuarioLogado usuario={ {nome: 'Gui'} }/>
+        <ListaProdutosV2 />
+        {/* < UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
+        < UsuarioLogado usuario={ {nome: 'Gui'} }/> */}
         {/* < Familia>
             <Membro nome = "Bia" sobrenome="Arruda" />
             <Membro nome = "Carlos" sobrenome="Arruda" />
