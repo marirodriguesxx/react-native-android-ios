@@ -24,7 +24,8 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-import FlexboxV3 from './componentes/layout/FlexboxV3'
+import FlexboxV4 from './componentes/layout/FlexboxV4'
+// import FlexboxV3 from './componentes/layout/FlexboxV3'
 // import FlexboxV2 from './componentes/layout/FlexboxV2'
 // import FlexboxV1  from './componentes/layout/FlexboxV1'
 // import Quadrado from './componentes/layout/Quadrado'
@@ -50,7 +51,8 @@ import FlexboxV3 from './componentes/layout/FlexboxV3'
 export default () => (
     //safeareaview tambem eh um flexbox :)
     <SafeAreaView style={style.App}>  
-        <FlexboxV3 />
+        {/* <FlexboxV3 /> */}
+        <FlexboxV4 />
         {/* <FlexboxV2 /> */}
         {/* <FlexboxV1 /> */}
         {/* <Quadrado />
