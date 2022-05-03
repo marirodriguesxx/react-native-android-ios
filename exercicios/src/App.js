@@ -25,7 +25,9 @@ export default =>  return <Text>Primeiro Componente</Text>
 */
 
 
-import DigiteSeuNome from './componentes/DigiteSeuNome'
+import FlexboxV1  from './componentes/layout/FlexboxV1'
+// import Quadrado from './componentes/layout/Quadrado'
+// import DigiteSeuNome from './componentes/DigiteSeuNome'
 // import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
 // import ListaProdutos from './componentes/produtos/listaProdutos'
 // import UsuarioLogado from './componentes/usuarioLogado'
@@ -47,7 +49,12 @@ import DigiteSeuNome from './componentes/DigiteSeuNome'
 export default () => (
     
     <SafeAreaView style={style.App}> 
-        <DigiteSeuNome />
+        <FlexboxV1 />
+        {/* <Quadrado />
+        <Quadrado cor='#F00'/>
+        <Quadrado cor='#090'/>
+        <Quadrado cor='#009'/> */}
+        {/* <DigiteSeuNome /> */}
         {/* <ListaProdutosV2 /> */}
         {/* < UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
         < UsuarioLogado usuario={ {nome: 'Gui'} }/> */}
