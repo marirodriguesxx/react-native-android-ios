@@ -6,7 +6,7 @@ import Quadrado from './Quadrado'
 export default props => {
     return (
         //os itens (quadrados) definiram o tamanho do parent (view)
-        <View style={style.FlexV1}>
+        <View style={style.FlexV2}>
             <Quadrado cor='#ff801a' />
             <Quadrado cor='#50d1f6' />
             <Quadrado cor='#dd22c1' />
@@ -17,9 +17,10 @@ export default props => {
 }
 
 const style = StyleSheet.create({
-    FlexV1: { //flex contaiener :)
-        // flexgrow "cresce o componente"
-        flexGrow: 1,
+    FlexV2: { //flex contaiener :)
+        flex: 1, //alinhamento no eixo principal
+        width: '100%', 
+        alignItems: "center", // alinhamento no eixo cruzado
         // alinhamento do Main Axis (no caso, da coluna)
         // flex-start -> elementos no inicio
         // flex-start -> elementos no final
@@ -27,7 +28,9 @@ const style = StyleSheet.create({
         // space-around -> espaco ao redor de todos os elementos
         // space-evenly -> dividde os espacos de forma uniforme
         // space-btween -> espaco entre todos os elementos
-        justifyContent: "space-between",
+        justifyContent: "space-evenly",
         backgroundColor: '#000'
     }
 })
+
+// qualquer view dentro do react-native usa flexbox para organizar

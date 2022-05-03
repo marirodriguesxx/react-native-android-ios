@@ -24,8 +24,8 @@ export default =>{
 export default =>  return <Text>Primeiro Componente</Text>
 */
 
-
-import FlexboxV1  from './componentes/layout/FlexboxV1'
+import FlexboxV2 from './componentes/layout/FlexboxV2'
+// import FlexboxV1  from './componentes/layout/FlexboxV1'
 // import Quadrado from './componentes/layout/Quadrado'
 // import DigiteSeuNome from './componentes/DigiteSeuNome'
 // import ListaProdutosV2 from './componentes/produtos/listaProdutosV2'
@@ -47,9 +47,10 @@ import FlexboxV1  from './componentes/layout/FlexboxV1'
 // import Primeiro from './componentes/Primeiro'  
 
 export default () => (
-    
-    <SafeAreaView style={style.App}> 
-        <FlexboxV1 />
+    //safeareaview tambem eh um flexbox :)
+    <SafeAreaView style={style.App}>  
+        <FlexboxV2 />
+        {/* <FlexboxV1 /> */}
         {/* <Quadrado />
         <Quadrado cor='#F00'/>
         <Quadrado cor='#090'/>
@@ -87,7 +88,7 @@ export default () => (
 )
 
 const style = StyleSheet.create({
-    App: {
+    App: { //propriedades do flexbox
         flexGrow: 1,
         justifyContent: "center",
         alignItems: "center",
