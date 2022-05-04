@@ -53,7 +53,7 @@ export default () => (
     //safeareaview tambem eh um flexbox :)
     <SafeAreaView style={style.App}>  
         {/* <FlexboxV3 /> */}
-        <Mega qtd={7}/>
+        <Mega qtd={12}/>
         {/* <FlexboxV4 />
          */}
         {/* <FlexboxV2 /> */}
