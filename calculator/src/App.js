@@ -77,7 +77,9 @@ export default class App extends Component {
       <View style={styles.container}>
         <Display value={this.state.displayValue} />
         <View style={styles.buttons}>
-          <Button label='AC' triple onClick={this.clearMemory} />
+          <Button label='AC' operation onClick={this.clearMemory} />
+          <Button label='+/-' operation onClick={this.clearMemory} />
+          <Button label='%' operation onClick={this.clearMemory} />
           <Button label='/' operation onClick={this.setOperation} />
           <Button label='7' onClick={this.addDigit} />
           <Button label='8' onClick={this.addDigit} />
@@ -105,6 +107,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   buttons: {
+    flex: 2,
     flexDirection: 'row',
     flexWrap: 'wrap',
   }
