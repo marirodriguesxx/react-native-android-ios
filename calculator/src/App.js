@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Platform, StyleSheet, Text, View, SafeAreaView} from 'react-native'
 import Button from './componentes/Button';
-// import Display from './src/components/Display'
+import Display from './componentes/Display';
 
 const initialState = {
   displayValue: '0',
@@ -12,9 +12,15 @@ const initialState = {
 }
 
 export default class App extends Component {
+
+  state = {
+    displayValue: '0'
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <Display values={this.state.displayValue} />
         <SafeAreaView style={styles.buttons}>
           <Button label='AC' />
           <Button label='/' />
