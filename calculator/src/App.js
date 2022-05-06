@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Platform, StyleSheet, Text, SafeAreaView} from 'react-native'
+import {StatusBar, StyleSheet, View, SafeAreaView} from 'react-native'
 import Button from './componentes/Button'
 import Display from './componentes/Display'
 
@@ -89,27 +89,44 @@ export default class App extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar barStyle="light-content" />
         <Display value={this.state.displayValue} />
         <SafeAreaView style={styles.buttons}>
-          <Button label='AC' operation onClick={this.clearMemory} />
-          <Button label='+/-' operation onClick={this.setOperation} />
-          <Button label='%' operation onClick={this.setOperation} />
-          <Button label='/' operation onClick={this.setOperation} />
-          <Button label='7' onClick={this.addDigit} />
-          <Button label='8' onClick={this.addDigit} />
-          <Button label='9' onClick={this.addDigit} />
-          <Button label='*' operation  onClick={this.setOperation} />
-          <Button label='4' onClick={this.addDigit} />
-          <Button label='5' onClick={this.addDigit} />
-          <Button label='6' onClick={this.addDigit} />
-          <Button label='-' operation onClick={this.setOperation} />
-          <Button label='1' onClick={this.addDigit} />
-          <Button label='2' onClick={this.addDigit} />
-          <Button label='3' onClick={this.addDigit} />
-          <Button label='+' operation onClick={this.setOperation} />
-          <Button label='0' double  onClick={this.addDigit} />
-          <Button label='.' onClick={this.addDigit} />
-          <Button label='=' operation onClick={this.setOperation} />
+
+          <View style={{ flexDirection: "row" }}>
+            <Button label='AC' operation onClick={this.clearMemory} />
+            <Button label='+/-' operation onClick={this.setOperation} />
+            <Button label='%' operation onClick={this.setOperation} />
+            <Button label='/' operation onClick={this.setOperation} />
+          </View>
+
+          <View style={{ flexDirection: "row" }}>
+            <Button label='7' onClick={this.addDigit} />
+            <Button label='8' onClick={this.addDigit} />
+            <Button label='9' onClick={this.addDigit} />
+            <Button label='*' operation  onClick={this.setOperation} />
+          </View>
+
+          <View style={{ flexDirection: "row", justifyContent: 'space-evenly' }}>
+            <Button label='4' onClick={this.addDigit} />
+            <Button label='5' onClick={this.addDigit} />
+            <Button label='6' onClick={this.addDigit} />
+            <Button label='-' operation onClick={this.setOperation} />
+          </View>
+
+          <View style={{ flexDirection: "row" }}>
+            <Button label='1' onClick={this.addDigit} />
+            <Button label='2' onClick={this.addDigit} />
+            <Button label='3' onClick={this.addDigit} />
+            <Button label='+' operation onClick={this.setOperation} />
+          </View>
+
+          <View style={{ flexDirection: "row" }}>
+            <Button label='0' double  onClick={this.addDigit} />
+            <Button label='.' onClick={this.addDigit} />
+            <Button label='=' operation onClick={this.setOperation} />
+          </View>
+
         </SafeAreaView>
       </SafeAreaView>
     );
@@ -123,6 +140,7 @@ const styles = StyleSheet.create({
   buttons: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    backgroundColor: '#000000'
+    backgroundColor: '#000000',
+    justifyContent: 'space-evenly'
   }
 });

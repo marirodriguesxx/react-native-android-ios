@@ -1,25 +1,35 @@
 import React from 'react'
 import { StyleSheet, Text, Dimensions, TouchableHighlight } from 'react-native'
 
+const screen = Dimensions.get("window");
+const screeWidth = screen.width;
+
 const styles = StyleSheet.create({
     button: {
-        fontSize: 40,
-        borderRadius: 10,
-        height: Dimensions.get('window').width / 4 ,
-        width: Dimensions.get('window').width / 4 ,
+        color: 'black',
+        fontSize: 30,
+        borderRadius: 50,
+        height: Math.floor(screeWidth/4),
+        width: Math.floor(screeWidth/4 ),
         padding: 20,
+        // nesse caso, esta sendo usada apenas porque nao ha propriedades de shadow
+        //caso houvesse, deveria ser investigada outra forma de resolver o backgroundcolor alem dos limites do raio da circunferencia no IOS
+        overflow: 'hidden',
         backgroundColor: '#f0f0f0',
         textAlign: 'center',
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: '#888',
+        
     },
     operationButton: {
-        color: '#000000',
+        color: 'black',
         backgroundColor: '#FFF8DC',
     },
     buttonDouble: {
+        color: 'black',
+        width: screeWidth/2,
         backgroundColor: '#f0f0f0',
-        width: (Dimensions.get('window').width / 4) * 2,
+        paddingLeft: 50,
     }
 })
 
