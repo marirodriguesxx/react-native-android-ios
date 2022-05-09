@@ -93,35 +93,35 @@ export default class App extends Component {
         <Display value={this.state.displayValue} />
         <SafeAreaView style={styles.buttons}>
 
-          <View style={{ flexDirection: "row" }}>
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly',}}>
             <Button label='AC' operation onClick={this.clearMemory} />
             <Button label='+/-' operation onClick={this.setOperation} />
             <Button label='%' operation onClick={this.setOperation} />
             <Button label='/' operation onClick={this.setOperation} />
           </View>
-
-          <View style={{ flexDirection: "row" }}>
+            
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly',}}>
             <Button label='7' onClick={this.addDigit} />
             <Button label='8' onClick={this.addDigit} />
             <Button label='9' onClick={this.addDigit} />
             <Button label='*' operation  onClick={this.setOperation} />
           </View>
 
-          <View style={{ flexDirection: "row", justifyContent: 'space-evenly' }}>
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly',}}>
             <Button label='4' onClick={this.addDigit} />
             <Button label='5' onClick={this.addDigit} />
             <Button label='6' onClick={this.addDigit} />
-            <Button label='-' operation onClick={this.setOperation} />
+            <Button label='-' operation onClick={this.setOperation} /> 
           </View>
 
-          <View style={{ flexDirection: "row" }}>
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly',}}>
             <Button label='1' onClick={this.addDigit} />
             <Button label='2' onClick={this.addDigit} />
             <Button label='3' onClick={this.addDigit} />
             <Button label='+' operation onClick={this.setOperation} />
           </View>
 
-          <View style={{ flexDirection: "row" }}>
+          <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly',}}>
             <Button label='0' double  onClick={this.addDigit} />
             <Button label='.' onClick={this.addDigit} />
             <Button label='=' operation onClick={this.setOperation} />
@@ -136,11 +136,10 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "black",
+    justifyContent: "flex-end"
   },
   buttons: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    backgroundColor: '#000000',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
   }
 });

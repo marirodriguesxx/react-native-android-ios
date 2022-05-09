@@ -2,15 +2,15 @@ import React from 'react'
 import { StyleSheet, Text, Dimensions, TouchableHighlight } from 'react-native'
 
 const screen = Dimensions.get("window");
-const screeWidth = screen.width;
+const buttonWidth = screen.width / 4;
 
 const styles = StyleSheet.create({
     button: {
         color: 'black',
         fontSize: 30,
-        borderRadius: 50,
-        height: Math.floor(screeWidth/4),
-        width: Math.floor(screeWidth/4 ),
+        borderRadius: 40,
+        height: Math.floor(buttonWidth - 10),
+        width: Math.floor(buttonWidth - 10),
         padding: 20,
         // nesse caso, esta sendo usada apenas porque nao ha propriedades de shadow
         //caso houvesse, deveria ser investigada outra forma de resolver o backgroundcolor alem dos limites do raio da circunferencia no IOS
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     },
     buttonDouble: {
         color: 'black',
-        width: screeWidth/2,
+        width: screen.width / 2 - 10,
         backgroundColor: '#f0f0f0',
         paddingLeft: 50,
     }

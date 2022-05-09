@@ -5,18 +5,26 @@ const styles = StyleSheet.create({
     display: {
         flex: 1,
         padding: 20,
-        justifyContent: 'center',
-        backgroundColor: '#FFFAF0',
+        justifyContent: 'flex-end',
         alignItems: 'flex-end',
+        borderColor: 'white',
+        borderBottomWidth: 3,
+        borderTopWidth: 3,
+        borderLeftWidth: 3,
+        borderRightWidth: 3
     },
     displayValue: {
-        fontSize: 60,
-        color: '#000000',
+        color: "#fff",
+        fontSize: 40,
+        textAlign: "right",
+        marginRight: 20,
+        marginBottom: 10
     }
 })
 
 export default props => 
     <View style={styles.display}>
-        <Text style={styles.displayValue}
-            numberOfLines={1}>{props.value}</Text>
+        <Text style={styles.displayValue}>
+            {props.value}
+        </Text>
     </View>
