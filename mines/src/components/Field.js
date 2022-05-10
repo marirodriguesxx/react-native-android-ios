@@ -1,15 +1,18 @@
 import React from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 import params from '../params'
+import Mine from './Mine'
 
 //componente baseado em funcao (comp funcional)
 export default props => {
 
-    const { mined, opened, nearMines } = props
+    const { mined, opened, nearMines, exploded } = props
 
     //vetor de estilos 
     const styleField = [styles.field] //estilo padrao
     if(opened) styleField.push(styles.opened)
+
+    if(exploded) styleField.push(styles.exploded)
 
     //se tiver apenas um estilo, ele sera o estilo regular
     if (styleField.length ===1 ) styleField.push(styles.regular)
@@ -28,6 +31,7 @@ export default props => {
                 <Text style={[styles.label, {color: color}]}>
                     {nearMines}
                 </Text> : false}
+            {mined && opened ? <Mine /> : false}
         </View>
     )
 }
@@ -54,5 +58,9 @@ const styles = StyleSheet.create({
     label: {
         fontWeight: 'bold',
         fontSize: params.fontSize,
+    },
+    exploded: {
+        backgroundColor: 'red',
+        borderColor: 'red',
     }
 })

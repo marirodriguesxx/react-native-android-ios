@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native'
 
-//definindo tamamanhos padores dos elementos visuais
+//definindo tamamanhos padroes dos elementos visuais
 //apesar de ser uma constante, os objetos de dentro de param podem ser ALTERADOS
 //eles nao poderiam ser alterados caso houvesse um freeze
 const params = {
