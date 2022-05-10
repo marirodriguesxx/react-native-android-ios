@@ -1,12 +1,12 @@
 import { Dimensions } from 'react-native'
 
-
+//definindo tamamanhos padores dos elementos visuais
 //apesar de ser uma constante, os objetos de dentro de param podem ser ALTERADOS
 //eles nao poderiam ser alterados caso houvesse um freeze
 const params = {
     blockSize: 20,
     borderSize: 5,
-    fontSize: 15,
+    fontSize: 8,
     headerRatio: 0.15, //15% representa o cabecalho - 85% representa a area do jogo
     difficultLevel: 0.1, //percentual de minas na tela - 10%
     getColumnsAmount() {

@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-} from 'react-native';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import { Component } from 'react/cjs/react.production.min';
 import params from './params';
+import Field from './components/Field';
 
 export default class App extends Component{
   render(){
@@ -14,6 +12,11 @@ export default class App extends Component{
         <Text style = {styles.welcome}>
           {params.getRowsAmount()}X{params.getColumnsAmount()}
         </Text>
+        <Field />
+        <Field opened  nearMines={1} />
+        <Field opened  nearMines={2} />
+        <Field opened  nearMines={3} />
+        <Field opened  nearMines={6} />
       </SafeAreaView>
     )
   }
@@ -31,5 +34,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
+
 });
 
