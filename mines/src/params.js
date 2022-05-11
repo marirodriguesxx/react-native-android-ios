@@ -3,10 +3,11 @@ import { Dimensions } from 'react-native'
 //definindo tamamanhos padroes dos elementos visuais
 //apesar de ser uma constante, os objetos de dentro de param podem ser ALTERADOS
 //eles nao poderiam ser alterados caso houvesse um freeze
+// https://stackoverflow.com/questions/33124058/object-freeze-vs-const
 const params = {
-    blockSize: 20,
+    blockSize: 25,
     borderSize: 5,
-    fontSize: 8,
+    fontSize: 15,
     headerRatio: 0.15, //15% representa o cabecalho - 85% representa a area do jogo
     difficultLevel: 0.1, //percentual de minas na tela - 10%
     getColumnsAmount() {
