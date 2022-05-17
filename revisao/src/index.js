@@ -1,6 +1,9 @@
 import React from 'react'
-import Hello from './components/hello'
+import { SafeAreaView } from 'react-native'
+import Hello from './components/hello' //fora do par de chaver pois hello usou export default
 
-export default () => {
-    <Hello />
-}
+export default () => (
+    <SafeAreaView>
+        <Hello decimal = {18}/>
+    </SafeAreaView>
+)
